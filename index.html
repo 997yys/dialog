@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <button id="btn">点击</button>
+    </section>
+    <script src="js/src.js"></script>
+    <script>
+       var btn=document.getElementById("btn");
+       btn.onclick=function(){
+            new Dilog({
+                title:"确定要删除吗",
+                sures:"确定",
+                error:"取消"
+            })
+        }
+    </script>
+</body>
+</html>
